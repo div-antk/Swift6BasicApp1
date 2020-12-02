@@ -23,7 +23,13 @@ class ViewController: UIViewController {
   }
 
   @IBAction func tap(_ sender: Any) {
+    count = count + 1
+    // 型を変換することをキャストという
+    countLabel.text = String(count)
     
+    if count > 5 {
+      imageView.image = UIImage(named: "back2")
+    }
   }
   
 }
